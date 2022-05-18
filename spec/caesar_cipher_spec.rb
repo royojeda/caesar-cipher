@@ -20,4 +20,8 @@ describe "#caesar_cipher" do
   it "prints the output of shifting a string with uppercase characters by a positive offset with wrapping" do
     expect(caesar_cipher('aBcYzX', 7)).to eql('hIjFgE')
   end
+
+  it "prints the output of shifting a string with uppercase characters by a negative offset with wrapping" do
+    expect(caesar_cipher('BCAaWv', -3)).to eql('YZXxTs')
+  end
 end
