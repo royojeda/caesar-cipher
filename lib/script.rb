@@ -21,5 +21,3 @@ def shift(input_char, shift_by, lower_limit, upper_limit)
       input_char = ((input_char.ord) + shift_by).chr
     end
 end
-
-p caesar_cipher("What a string!", 5)
